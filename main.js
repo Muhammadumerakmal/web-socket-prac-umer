@@ -22,5 +22,9 @@ const wss = new WebSocketServer({ server });
 wss.on("connection",(webs)=>{
     console.log(" 🔌 websocket connected on secret port 🌐");
 
-    webs.on("message",()=>{})
+    webs.on("message",(data)=>{
+        console.log("✅" , data);
+        
+        
+    })
 })
