@@ -25,6 +25,7 @@ wss.on("connection",(webs)=>{
     webs.on("message",(data)=>{
         console.log("✅" , data);
         
+        webs.send("thanks for your message 😊")
         
     })
 })
