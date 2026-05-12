@@ -23,7 +23,7 @@ wss.on("connection",(webs)=>{
     console.log(" 🔌 websocket connected on secret port 🌐");
 
     webs.on("message",(data)=>{
-        console.log("✅" , data);
+        console.log("✅ %s" , data);
         
         webs.send("thanks for your message 😊")
         
